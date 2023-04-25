@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <form class="Formulario">
+      <p>Envie uma mensagem preenchendo o formulário abaixo</p>
+      Data de nascimento: <input type="date" name="nascimento">
+
+      <div class="field">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="field">
+        <label for="telefone">Seu telefone</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Seu email</label>
+        <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+      </div>
+
+      <span>Qual horário prefere ser atendido??</span>
+      <label class="checkbox"><input type="checkbox">Manhã</label>
+        <label class="checkbox"><input type="checkbox">Tarde</label>
+          <label class="checkbox"><input type="checkbox">Noite</label>
+
+          <div class="field radiobox">
+            <span>Deseja receber nossas novidades??</span>
+            <input type="radio" name="novidades" id="sim" value="sim"> <label for="sim">Sim</label>
+
+            <input type="radio" name="novidades" id="nao" value="nao"> <label for="nao">Não</label>
+          </div>
+
+      <input type="submit" name="acao" value="Enviar">
+
+    </form>
+
+  </body>
+</html>
